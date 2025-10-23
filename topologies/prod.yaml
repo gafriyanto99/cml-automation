@@ -1,0 +1,353 @@
+annotations:
+  - border_color: '#00000000'
+    border_style: ''
+    color: '#808080FF'
+    rotation: 0
+    text_bold: false
+    text_content: Enable secret admin
+    text_font: monospace
+    text_italic: false
+    text_size: 12
+    text_unit: pt
+    thickness: 1
+    type: text
+    x1: -280.0
+    y1: -120.0
+    z_index: 0
+nodes:
+  - boot_disk_size: null
+    configuration: "Building configuration...\n\nCurrent configuration : 6249 bytes\n\
+      !\n! Last configuration change at 08:52:31 UTC Sat Oct 28 2023\n!\nversion 17.3\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service call-home\nplatform qfp utilization monitor load 80\nplatform punt-keepalive\
+      \ disable-kernel-core\nplatform console serial\n!\nhostname router1\n!\nboot-start-marker\n\
+      boot-end-marker\n!\n!\nno logging console\nenable secret 9 $9$/HcE.4Q1yGjTpE$rRzxQ64qbektiVTym6kukZNyBb8Qk6f7eRhBwQZKNXQ\n\
+      !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nip domain name cisco.com\n!\n!\n!\n\
+      login on-success log\n!\n!\n!\n!\n!\n!\n!\nsubscriber templating\n!\n!\n!\n\
+      !\n!\n!\nmultilink bundle-name authenticated\n!\ndomain cisco.com\n!\n!\n!\n\
+      !\n!\n!\n!\ncrypto key generate rsa modulus 2048\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint SLA-TrustPoint\n enrollment\
+      \ pkcs12\n revocation-check crl\n!\ncrypto pki trustpoint TP-self-signed-3664400475\n\
+      \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-3664400475\n\
+      \ revocation-check none\n rsakeypair TP-self-signed-3664400475\n!\n!\ncrypto\
+      \ pki certificate chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209\
+      \ A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355\
+      \ 040A1305 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73\
+      \ 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338\
+      \ 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030\
+      \ 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130\
+      \ 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100\
+      \ A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147\
+      \ C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239\
+      \ C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9\
+      \ 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD\
+      \ C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7\
+      \ 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62\
+      \ EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD\
+      \ 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1\
+      \ 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13\
+      \ 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17\
+      \ 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24\
+      \ D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B\
+      \ 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E\
+      \ 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700\
+      \ 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6\
+      \ 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F\
+      \ 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA\
+      \ EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049\
+      \ 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \t\
+      quit\ncrypto pki certificate chain TP-self-signed-3664400475\n certificate self-signed\
+      \ 01\n  30820330 30820218 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+      \  31312F30 2D060355 04031326 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+      \  69666963 6174652D 33363634 34303034 3735301E 170D3233 31303237 30383339\n\
+      \  33385A17 0D333331 30323630 38333933 385A3031 312F302D 06035504 03132649\n\
+      \  4F532D53 656C662D 5369676E 65642D43 65727469 66696361 74652D33 36363434\n\
+      \  30303437 35308201 22300D06 092A8648 86F70D01 01010500 0382010F 00308201\n\
+      \  0A028201 0100D8A3 D03172BA E9EF186B 188FC794 CF531C2C ACB9F84B DF0D9961\n\
+      \  CA3BC6D7 B4D13BFF 18761F06 31098D5D 997D730B FD3123A2 B8FBD214 1D6C50BA\n\
+      \  B0785343 724FCF8E ABD1B19E 55DC65F5 53F031E2 135DD855 8EA71A6C CD881892\n\
+      \  7DE221B8 006DA53F B3E2845F FFFB66B2 D84BA3BB EBE5CC43 DDEFD879 539978F4\n\
+      \  C601ABCD 76874A00 B1851271 09693DC0 3C2980F4 0EAFE560 397709CA D9947DF4\n\
+      \  46AEA209 5356306B 32093BE2 126D9B8C 6B53FE62 24689274 C1ED68DF 6630C4FC\n\
+      \  7F852004 6C9348FE ABDCF9FC 5D428EF3 076B9485 56381E94 F27A2C33 56DC86BF\n\
+      \  8E641464 1F37A8B3 E3F12596 15D10AC9 ACA6465F 2A5AD5C0 DE4DB594 88CB626E\n\
+      \  B9FB2449 B1E10203 010001A3 53305130 0F060355 1D130101 FF040530 030101FF\n\
+      \  301F0603 551D2304 18301680 140931CA 5C170650 437F600F 7245A519 B3E95A99\n\
+      \  FD301D06 03551D0E 04160414 0931CA5C 17065043 7F600F72 45A519B3 E95A99FD\n\
+      \  300D0609 2A864886 F70D0101 05050003 82010100 A0B495A5 39B12F29 B92B30E7\n\
+      \  4857EBA4 D1257B1A 87AC1733 2A175ACC 136A8116 6480748B E46E6208 60352E03\n\
+      \  E33C0387 258F2CD4 3C0B8033 69240F41 2D250D96 9AC80254 1A08577B 196129DE\n\
+      \  71D7714B CD7F8E52 AD6A7FF4 810DF6B4 12FD2AC5 1C4DB962 3A0F5573 E2E31E58\n\
+      \  86AB4E2E A9C22875 E09E54B1 0921C2D0 E6F3E04D 85140FA7 C00BD29D C6C5B121\n\
+      \  40BB9F5D DFB07326 6D28319E 7F142D94 01D48379 43C9561F FBEA792D 411810FF\n\
+      \  061C58E1 6320A889 50E5D3D7 C2EF7CDC 3BFFA524 00DE53B8 F939CE2C CE3D1E73\n\
+      \  FE9197F6 1A2EBF8E DA22D023 216F1A00 7E84FE1D 13E058BA 547D39E5 2EC1FAC9\n\
+      \  9BCE4A95 82C7E46F D25BEAC1 175D0C0F D66A9557\n  \tquit\n!\nlicense udi pid\
+      \ CSR1000V sn 9WAZ8W2MTWA\ndiagnostic bootup level minimal\nmemory free low-watermark\
+      \ processor 71507\n!\n!\nspanning-tree extend system-id\n!\nusername admin password\
+      \ 0 admin\n!\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+      !\n!\n!\n!\n!\n!\n!\n!\ninterface GigabitEthernet1\n description 'configured\
+      \ by NSO'\n ip address 10.201.11.194 255.255.255.0\n no shutdown\n negotiation\
+      \ auto\n no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet2\n no ip address\
+      \ shutdown\n negotiation auto\n no mop enabled\n\
+      \ no mop sysid\n!\ninterface GigabitEthernet3\n no ip address\n shutdown\n negotiation\
+      \ auto\n no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet4\n no ip\
+      \ address\n shutdown\n negotiation auto\n no mop enabled\n no mop sysid\n!\n\
+      ip forward-protocol nd\nno ip http server\nip http secure-server\n!\nip route\
+      \ 0.0.0.0 0.0.0.0 10.201.11.254\n!\n!\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\n\
+      !\n!\n!\n!\nline con 0\n exec-timeout 0 0\n stopbits 1\nline vty 0 4\n exec-timeout\
+      \ 0 0\n login local\n transport input ssh\n!\ncall-home\n ! If contact email\
+      \ address in call-home is configured as sch-smart-licensing@cisco.com\n ! the\
+      \ email address configured in Cisco Smart License Portal will be used as contact\
+      \ email address to send SCH notifications.\n contact-email-addr sch-smart-licensing@cisco.com\n\
+      \ profile \"CiscoTAC-1\"\n  active\n  destination transport-method http\n!\n\
+      !\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n0
+    image_definition: null
+    label: csr1000v-0
+    node_definition: csr1000v
+    ram: null
+    tags: []
+    x: -200
+    y: -80
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet2
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet3
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet4
+        slot: 3
+        type: physical
+  - boot_disk_size: null
+    configuration: System Bridge
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n1
+    image_definition: null
+    label: ext-conn-0
+    node_definition: external_connector
+    ram: null
+    tags: []
+    x: -80
+    y: 200
+    interfaces:
+      - id: i0
+        label: port
+        slot: 0
+        type: physical
+  - boot_disk_size: null
+    configuration: ums-3baa00b2-31
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n2
+    image_definition: null
+    label: unmanaged-switch-0
+    node_definition: unmanaged_switch
+    ram: null
+    tags: []
+    x: -80
+    y: 80
+    interfaces:
+      - id: i0
+        label: port0
+        slot: 0
+        type: physical
+      - id: i1
+        label: port1
+        slot: 1
+        type: physical
+      - id: i2
+        label: port2
+        slot: 2
+        type: physical
+      - id: i3
+        label: port3
+        slot: 3
+        type: physical
+      - id: i4
+        label: port4
+        slot: 4
+        type: physical
+      - id: i5
+        label: port5
+        slot: 5
+        type: physical
+      - id: i6
+        label: port6
+        slot: 6
+        type: physical
+      - id: i7
+        label: port7
+        slot: 7
+        type: physical
+  - boot_disk_size: null
+    configuration: "Building configuration...\n\nCurrent configuration : 6219 bytes\n\
+      !\n! Last configuration change at 08:52:31 UTC Sat Oct 28 2023\n!\nversion 17.3\n\
+      service timestamps debug datetime msec\nservice timestamps log datetime msec\n\
+      service call-home\nplatform qfp utilization monitor load 80\nplatform punt-keepalive\
+      \ disable-kernel-core\nplatform console serial\n!\nhostname router2\n!\nboot-start-marker\n\
+      boot-end-marker\n!\n!\nno logging console\nenable secret 9 $9$/HcE.4Q1yGjTpE$rRzxQ64qbektiVTym6kukZNyBb8Qk6f7eRhBwQZKNXQ\n\
+      !\nno aaa new-model\n!\n!\n!\n!\n!\n!\n!\nip domain name cisco.com\n!\n!\n!\n\
+      login on-success log\n!\n!\n!\n!\n!\n!\n!\nsubscriber templating\n!\n!\n!\n\
+      !\n!\n!\nmultilink bundle-name authenticated\n!\ndomain cisco.com\n!\n!\n!\n\
+      !\n!\n!\ncrypto key generate rsa modulus 2048\n!\n!\n!\n!\n!\n!\n!\ncrypto pki trustpoint SLA-TrustPoint\n enrollment\
+      \ pkcs12\n revocation-check crl\n!\ncrypto pki trustpoint TP-self-signed-651088367\n\
+      \ enrollment selfsigned\n subject-name cn=IOS-Self-Signed-Certificate-651088367\n\
+      \ revocation-check none\n rsakeypair TP-self-signed-651088367\n!\n!\ncrypto\
+      \ pki certificate chain SLA-TrustPoint\n certificate ca 01\n  30820321 30820209\
+      \ A0030201 02020101 300D0609 2A864886 F70D0101 0B050030\n  32310E30 0C060355\
+      \ 040A1305 43697363 6F312030 1E060355 04031317 43697363\n  6F204C69 63656E73\
+      \ 696E6720 526F6F74 20434130 1E170D31 33303533 30313934\n  3834375A 170D3338\
+      \ 30353330 31393438 34375A30 32310E30 0C060355 040A1305\n  43697363 6F312030\
+      \ 1E060355 04031317 43697363 6F204C69 63656E73 696E6720\n  526F6F74 20434130\
+      \ 82012230 0D06092A 864886F7 0D010101 05000382 010F0030\n  82010A02 82010100\
+      \ A6BCBD96 131E05F7 145EA72C 2CD686E6 17222EA1 F1EFF64D\n  CBB4C798 212AA147\
+      \ C655D8D7 9471380D 8711441E 1AAF071A 9CAE6388 8A38E520\n  1C394D78 462EF239\
+      \ C659F715 B98C0A59 5BBB5CBD 0CFEBEA3 700A8BF7 D8F256EE\n  4AA4E80D DB6FD1C9\
+      \ 60B1FD18 FFC69C96 6FA68957 A2617DE7 104FDC5F EA2956AC\n  7390A3EB 2B5436AD\
+      \ C847A2C5 DAB553EB 69A9A535 58E9F3E3 C0BD23CF 58BD7188\n  68E69491 20F320E7\
+      \ 948E71D7 AE3BCC84 F10684C7 4BC8E00F 539BA42B 42C68BB7\n  C7479096 B4CB2D62\
+      \ EA2F505D C7B062A4 6811D95B E8250FC4 5D5D5FB8 8F27D191\n  C55F0D76 61F9A4CD\
+      \ 3D992327 A8BB03BD 4E6D7069 7CBADF8B DF5F4368 95135E44\n  DFC7C6CF 04DD7FD1\
+      \ 02030100 01A34230 40300E06 03551D0F 0101FF04 04030201\n  06300F06 03551D13\
+      \ 0101FF04 05300301 01FF301D 0603551D 0E041604 1449DC85\n  4B3D31E5 1B3E6A17\
+      \ 606AF333 3D3B4C73 E8300D06 092A8648 86F70D01 010B0500\n  03820101 00507F24\
+      \ D3932A66 86025D9F E838AE5C 6D4DF6B0 49631C78 240DA905\n  604EDCDE FF4FED2B\
+      \ 77FC460E CD636FDB DD44681E 3A5673AB 9093D3B1 6C9E3D8B\n  D98987BF E40CBD9E\
+      \ 1AECA0C2 2189BB5C 8FA85686 CD98B646 5575B146 8DFC66A8\n  467A3DF4 4D565700\
+      \ 6ADF0F0D CF835015 3C04FF7C 21E878AC 11BA9CD2 55A9232C\n  7CA7B7E6 C1AF74F6\
+      \ 152E99B7 B1FCF9BB E973DE7F 5BDDEB86 C71E3B49 1765308B\n  5FB0DA06 B92AFE7F\
+      \ 494E8A9E 07B85737 F3A58BE1 1A48A229 C37C1E69 39F08678\n  80DDCD16 D6BACECA\
+      \ EEBC7CF9 8428787B 35202CDC 60E4616A B623CDBD 230E3AFB\n  418616A9 4093E049\
+      \ 4D10AB75 27E86F73 932E35B5 8862FDAE 0275156F 719BB2F0\n  D697DF7F 28\n  \t\
+      quit\ncrypto pki certificate chain TP-self-signed-651088367\n certificate self-signed\
+      \ 01\n  3082032E 30820216 A0030201 02020101 300D0609 2A864886 F70D0101 05050030\n\
+      \  30312E30 2C060355 04031325 494F532D 53656C66 2D536967 6E65642D 43657274\n\
+      \  69666963 6174652D 36353130 38383336 37301E17 0D323331 30323331 31333030\n\
+      \  335A170D 33333130 32323131 33303033 5A303031 2E302C06 03550403 1325494F\n\
+      \  532D5365 6C662D53 69676E65 642D4365 72746966 69636174 652D3635 31303838\n\
+      \  33363730 82012230 0D06092A 864886F7 0D010101 05000382 010F0030 82010A02\n\
+      \  82010100 A7234848 9580A792 2014CA45 AE3D88FA 27168CFC 9030FE59 5926D56C\n\
+      \  DD6515D3 088BDFE4 74C37EA5 4F663CBF 52612D0D 53B051E0 C1762B16 F66AA3A4\n\
+      \  AF5E8989 9FB83CFA CEECBF33 233E7F90 14C5E837 553C408B ECA6932F AB477149\n\
+      \  370122E2 8136AF14 B062E4C2 78D8E87C 5736AE3E ECAF40F8 30C3B165 957EEF8A\n\
+      \  EAB4A571 D8020B1B EFA7E52E 5590904A 79675971 72545FDC 1A3BC449 9B6F06E6\n\
+      \  ADD9446C B4A44593 DE43AEBF F4D30871 9F5C170D 83BB73F3 74DD23C7 F7CBB5B1\n\
+      \  D5643D58 A858CA6C 1C4F06A5 1623CB34 214A8D43 84C8A880 D4592048 B108BA94\n\
+      \  2C91E472 13BB7870 30C09348 BBB67332 CA7441F6 763E2868 6DF399C6 9966667D\n\
+      \  C223341B 02030100 01A35330 51300F06 03551D13 0101FF04 05300301 01FF301F\n\
+      \  0603551D 23041830 168014F9 CBD05DA3 1FB9E758 71929691 A145C219 BFFA7F30\n\
+      \  1D060355 1D0E0416 0414F9CB D05DA31F B9E75871 929691A1 45C219BF FA7F300D\n\
+      \  06092A86 4886F70D 01010505 00038201 01004B41 CDE5DC36 AF7688DD E91D168D\n\
+      \  D6DCE996 7CC17923 FEE330C1 D8956E36 6F4D5EF4 47DA76EE 553F9531 6B9446F9\n\
+      \  75A71583 AACFBFE4 340F35F0 5133C034 D9005626 0F2B0E3F A2F53966 6BCB759C\n\
+      \  3D52F057 78E5AAF0 39C29C45 A1F63582 6D4B3402 9C843704 36FD6CA3 BCD3C81B\n\
+      \  EC6D88EC 9397DF04 FFA056F0 87439980 0250B796 466A04B9 BF6F4A6F 44393400\n\
+      \  A4F6A2DE 4A4D8C63 492173EC C3469D6E FC1C2490 CDC4446D DFE9F280 E75B04D0\n\
+      \  3A0FE281 A08E3FBB 7FF81A61 04D3DA73 EC7A8BA8 3FD6E83A 86E795C7 0D138E1F\n\
+      \  6EC718B5 E06D0FD5 92C667E2 87DF07A4 D13AE8E8 1A097655 4840A6E0 1BD273A8\n\
+      \  64FC5F09 BF5BFA17 E6CBCDEB 72510570 E4B4\n  \tquit\n!\nlicense udi pid CSR1000V\
+      \ sn 9PV5IIVQ3QT\ndiagnostic bootup level minimal\nmemory free low-watermark\
+      \ processor 71507\n!\n!\nspanning-tree extend system-id\n!\nusername admin password\
+      \ 0 admin\n!\nredundancy\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n\
+      !\n!\n!\n!\n!\n!\n!\n!\ninterface GigabitEthernet1\n description 'configured\
+      \ by NSO'\n ip address 10.201.11.196 255.255.255.0\n no shutdown\n negotiation\
+      \ auto\n no mop enabled\n no mop sysid\n!\ninterface GigabitEthernet2\n no ip\
+      \ address\n shutdown\n negotiation auto\n no mop enabled\n no mop sysid\n!\n\
+      interface GigabitEthernet3\n no ip address\n shutdown\n negotiation auto\n no\
+      \ mop enabled\n no mop sysid\n!\ninterface GigabitEthernet4\n no ip address\n\
+      \ shutdown\n negotiation auto\n no mop enabled\n no mop sysid\n!\nip forward-protocol\
+      \ nd\nno ip http server\nip http secure-server\n!\nip route 0.0.0.0 0.0.0.0\
+      \ 10.201.11.254\n!\n!\n!\n!\n!\n!\n!\ncontrol-plane\n!\n!\n!\n!\n!\n!\nline\
+      \ con 0\n exec-timeout 0 0\n stopbits 1\nline vty 0 4\n exec-timeout 0 0\n login\
+      \ local\n transport input ssh\n!\ncall-home\n ! If contact email address in\
+      \ call-home is configured as sch-smart-licensing@cisco.com\n ! the email address\
+      \ configured in Cisco Smart License Portal will be used as contact email address\
+      \ to send SCH notifications.\n contact-email-addr sch-smart-licensing@cisco.com\n\
+      \ profile \"CiscoTAC-1\"\n  active\n  destination transport-method http\n!\n\
+      !\n!\n!\n!\nend"
+    cpu_limit: null
+    cpus: null
+    data_volume: null
+    hide_links: false
+    id: n3
+    image_definition: null
+    label: csr1000v-1
+    node_definition: csr1000v
+    ram: null
+    tags: []
+    x: 40
+    y: -80
+    interfaces:
+      - id: i0
+        label: Loopback0
+        type: loopback
+      - id: i1
+        label: GigabitEthernet1
+        slot: 0
+        type: physical
+      - id: i2
+        label: GigabitEthernet2
+        slot: 1
+        type: physical
+      - id: i3
+        label: GigabitEthernet3
+        slot: 2
+        type: physical
+      - id: i4
+        label: GigabitEthernet4
+        slot: 3
+        type: physical
+links:
+  - id: l0
+    n1: n0
+    n2: n2
+    i1: i1
+    i2: i0
+    conditioning: {}
+    label: csr1000v-0-GigabitEthernet1<->unmanaged-switch-0-port0
+  - id: l1
+    n1: n2
+    n2: n1
+    i1: i1
+    i2: i0
+    conditioning: {}
+    label: unmanaged-switch-0-port1<->ext-conn-0-port
+  - id: l2
+    n1: n3
+    n2: n2
+    i1: i1
+    i2: i2
+    conditioning: {}
+    label: csr1000v-1-GigabitEthernet1<->unmanaged-switch-0-port2
+  - id: l3
+    n1: n3
+    n2: n0
+    i1: i2
+    i2: i2
+    conditioning: {}
+    label: csr1000v-1-GigabitEthernet2<->csr1000v-0-GigabitEthernet2
+lab:
+  description: ''
+  notes: ''
+  title: NSO TEST
+  version: 0.2.1
