@@ -1,0 +1,10 @@
+labs:
+  - name: "ansible-lab1"
+    file: "/home/af/cml-automation/topologies/test-lab1.yaml"
+    state: present 
+  - name: "ansible-lab2"
+    file: "//home/af/cml-automation/topologies/test-lab2.yaml"
+    state: present 
+  - name: "ansible-lab3"
+    file: "/home/af/cml-automation/topologies/test-lab3.yaml"
+    state: present 

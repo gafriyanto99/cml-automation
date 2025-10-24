@@ -1,0 +1,16 @@
+- name: Manage CML Topologies
+  hosts: localhost
+  gather_facts: no
+  vars_files:
+    - cml-topologies.yaml
+
+  tasks:
+    - name: Import first CML Topologies
+      cisco.cml.cml_lab:
+        host: "172.30.33.224"
+        user: "admin"
+        password: "P@ssw0rd!"
+        validate_certs: false
+        lab: "ansible-1"
+        state: present
+        file: "/home/af/cml-automation/topologies/test-lab1.yaml"
